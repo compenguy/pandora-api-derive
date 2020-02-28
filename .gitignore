@@ -1,0 +1,6 @@
+/target
+pandora-api-derive/target
+**/*.rs.bk
+Cargo.lock
+test_username.txt
+test_password.txt
