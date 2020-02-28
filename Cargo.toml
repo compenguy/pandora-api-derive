@@ -1,13 +1,13 @@
 [package]
 name = "pandora-api-derive"
 version = "0.1.0"
-authors = ["Will Page <compenguy@gmail.com>"]
 edition = "2018"
+authors = ["Will Page <compenguy@gmail.com>"]
+description = "Defines a derive macro and some attributes to simplify authoring structs that can be serialized as Pandora API requests."
+repository = "https://github.com/compenguy/pandora-api-derive.git"
 
 [lib]
 proc-macro = true
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
 syn = "1"
