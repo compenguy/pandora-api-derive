@@ -3,6 +3,7 @@ name = "pandora-api-derive"
 version = "0.1.0"
 edition = "2018"
 authors = ["Will Page <compenguy@gmail.com>"]
+license = "MIT"
 description = "Defines a derive macro and some attributes to simplify authoring structs that can be serialized as Pandora API requests."
 repository = "https://github.com/compenguy/pandora-api-derive.git"
 

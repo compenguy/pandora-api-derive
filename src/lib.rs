@@ -20,7 +20,7 @@ encrypted, this may be overridden using the #[pandora_request(encrypted = true)]
 struct attribute.
 
 */
-// SPDX-License-Identifier: MIT AND WTFPL
+// SPDX-License-Identifier: MIT
 
 #![deny(missing_docs)]
 extern crate proc_macro;
