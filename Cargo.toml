@@ -1,6 +1,6 @@
 [package]
 name = "pandora-api-derive"
-version = "0.1.1"
+version = "0.1.2"
 edition = "2018"
 authors = ["Will Page <compenguy@gmail.com>"]
 license = "MIT"
@@ -11,8 +11,8 @@ repository = "https://github.com/compenguy/pandora-api-derive.git"
 proc-macro = true
 
 [dependencies]
-syn = "1"
+syn = "2"
 quote = "1"
 proc-macro2 = "1"
-darling = "0.14"
+darling = "0.20"
 heck = "0.4"

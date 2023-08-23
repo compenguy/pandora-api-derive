@@ -28,7 +28,6 @@ extern crate proc_macro;
 use darling::FromDeriveInput;
 use heck::ToLowerCamelCase;
 use proc_macro::TokenStream;
-use proc_macro2;
 use quote::{format_ident, quote, ToTokens};
 use syn::{Generics, Ident};
 
@@ -70,7 +69,7 @@ impl ToTokens for PandoraJsonRequest {
             response_type
                 .as_ref()
                 .map(|s| s.to_string())
-                .unwrap_or_else(|| format!("{}Response", ident))
+                .unwrap_or_else(|| format!("{ident}Response"))
         );
         let final_error_type = format_ident!(
             "{}",
@@ -170,7 +169,7 @@ impl ToTokens for PandoraRestRequest {
             response_type
                 .as_ref()
                 .map(|s| s.to_string())
-                .unwrap_or_else(|| format!("{}Response", ident))
+                .unwrap_or_else(|| format!("{ident}Response"))
         );
         let final_error_type = format_ident!(
             "{}",
